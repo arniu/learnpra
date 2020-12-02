@@ -4,7 +4,8 @@ version = "0.0.1"
 authors = ["Arniu Tseng"]
 description = "Learn by Practice"
 repository = "https://github.com/arniu/learnpra"
-edition = "2018"
+license = "CC-BY-NC-ND-4.0"
+readme = "README.md"
 
 [dependencies]
 doc-comment = "0.3"
