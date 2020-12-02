@@ -1,0 +1,10 @@
+[package]
+name = "learnpra"
+version = "0.0.1"
+authors = ["Arniu Tseng"]
+description = "Learn by Practice"
+repository = "https://github.com/arniu/learnpra"
+edition = "2018"
+
+[dependencies]
+doc-comment = "0.3"
