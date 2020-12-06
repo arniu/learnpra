@@ -6,4 +6,7 @@ extern crate doc_comment;
 #[doc(hidden)]
 mod posts;
 
+#[doc(hidden)]
+mod process;
+
 pub use posts::*;
