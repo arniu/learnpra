@@ -1,12 +1,10 @@
 #![doc(html_no_source)]
 
+#[doc(hidden)]
 #[macro_use]
-extern crate doc_comment;
+mod macros;
 
 #[doc(hidden)]
 mod posts;
-
-#[doc(hidden)]
-mod process;
 
 pub use posts::*;

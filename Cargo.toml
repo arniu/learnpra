@@ -6,6 +6,3 @@ description = "Learn by Practice"
 repository = "https://github.com/arniu/learnpra"
 license = "CC-BY-NC-ND-4.0"
 readme = "README.md"
-
-[dependencies]
-doc-comment = "0.3"
