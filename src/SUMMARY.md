@@ -9,7 +9,7 @@
 
 - [Write a Redis Server in Rust](./redbox/README.md)
   - [绪论](./redbox/chapter_00.md)
-  - [待定](./redbox/chapter_01.md)
+  - [建立服务器](./redbox/chapter_01.md)
   - [待定](./redbox/chapter_02.md)
   - [待定](./redbox/chapter_03.md)
   - [待定](./redbox/chapter_04.md)
