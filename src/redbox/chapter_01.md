@@ -1,18 +1,16 @@
-# 第 1 章：运行服务器
+# 第 1 章：新建 Echo 服务器
 
 ## 准备工作
 
-根据 `https://rustup.rs/` 指示，准备好 Rust 开发环境。
+根据 `<https://rustup.rs/>` 指示，准备好 Rust 开发环境。
 
-安装 `cargo-edit`，顺便检验 Rust 环境。
-
-`cargo-edit` 是 `cargo` 的有力补充，它提供了 `add`、`rm` 和 `upgrade` 等命令，可以方便地管理项目依赖。
-
-安装方法如下：
+安装 `cargo-edit`，顺便检验 Rust 是否就绪。安装方法如下：
 
 ```shell
 cargo install cargo-edit
 ```
+
+> `cargo-edit` 是 `cargo` 的有力补充，它提供了 `add`、`rm` 和 `upgrade` 等命令，可以方便地管理项目依赖。
 
 此外，准备好如下工具：
 
@@ -29,7 +27,7 @@ cargo new --lib redbox && cd redbox
 
 建立如下文件结构：
 
-```no-run
+<pre>
 .
 ├── Cargo.lock
 ├── Cargo.toml
@@ -42,7 +40,7 @@ cargo new --lib redbox && cd redbox
     │   └── redbox-server.rs    # 服务器
     ├── lib.rs
     └── server.rs
-```
+</pre>
 
 - 编辑 `redbox-cli.rs`
 
@@ -64,31 +62,38 @@ fn main() {
 
 对应 Redis 服务器，本章程序入口。
 
-- 编辑 `Cargo.toml`
+- 小测验
 
-注意 RedBox 有两个程序，`redbox-cli` 和 `redbox-server`。
-这样一来，当执行 `cargo run` 时就需要指定到底运行哪个程序。
-为方便测试，设置默认运行 `redbox-server`。
+运行如下命令，看看各自输出了什么：
 
-```toml
-[package]
-name = "redbox"
-version = "0.0.1"
-description = "A Redis server"
-repository = "https://github.com/arniu/redbox"
-homepage = "https://github.com/arniu/redbox"
-license = "MIT OR Apache-2.0"
-authors = ["Arniu Tseng"]
-edition = "2018"
+1. `cargo run`
+1. `cargo run --bin redbox-cli`
+1. `cargo run --bin redbox-server`
 
-default-run = "redbox-server"
-```
-
-> 运行如下命令，查看输出：
+> 为方便起见，我们设置默认运行的程序，或别名：
 >
-> 1. `cargo run --bin redbox-cli`
-> 1. `cargo run --bin redbox-server`
-> 1. `cargo run`
+> - 设置默认运行的程序
+>
+>   打开 `Cargo.toml` 设置 `[package.default-run]`：
+>
+>   ```toml
+>   [package]
+>   default-run = "redbox-server"
+>   ```
+>
+>   这样运行 `cargo run` 即可启动服务器。
+>
+> - 设置别名
+>
+>   新建文件 `.cargo/config.toml` 设置别名：
+>
+>   ```toml
+>   [alias]
+>   cli = "run --bin redbox-cli --"
+>   server = "run --bin redbox-server --"
+>   ```
+>
+>   直接运行 `cargo cli` 或 `cargo server` 即可。
 
 ## 建立连接
 
