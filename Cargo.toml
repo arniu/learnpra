@@ -6,3 +6,10 @@ description = "Learn by Practice"
 repository = "https://github.com/arniu/learnpra"
 license = "CC-BY-NC-ND-4.0"
 readme = "README.md"
+
+# From [1.54] on, we can write documentation like this:
+#
+#   #![doc = include_str!("README.md")]
+#
+# [1.54]: https://blog.rust-lang.org/2021/07/29/Rust-1.54.0.html
+rust-version = "1.54"

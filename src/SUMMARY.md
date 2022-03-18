@@ -1,16 +1,17 @@
 # Summary
 
 - [README](./README.md)
-- [API security](./posts/api-security.md)
-- [Crate features](./posts/crate-features.md)
-- [Pin projection](./posts/pin-projection.md)
+- [API security](./posts/api_security.md)
+- [Crate features](./posts/crate_features.md)
+- [Pin projection](./posts/pin_projection.md)
 
 ---
 
-- [Write a Redis Server in Rust](./redbox/README.md)
+<!--
+- [Write Redis in Rust](./redbox/README.md)
   - [绪论](./redbox/chapter_00.md)
-  - [待定](./redbox/chapter_01.md)
-  - [待定](./redbox/chapter_02.md)
+  - [新建 Echo 服务器](./redbox/chapter_01.md)
+  - [解析 RESP 协议](./redbox/chapter_02.md)
   - [待定](./redbox/chapter_03.md)
   - [待定](./redbox/chapter_04.md)
   - [待定](./redbox/chapter_05.md)
@@ -24,3 +25,4 @@
   - [待定](./redbox/chapter_13.md)
   - [待定](./redbox/chapter_14.md)
   - [待定](./redbox/chapter_15.md)
+ -->
