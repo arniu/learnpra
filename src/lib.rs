@@ -13,7 +13,7 @@ pub mod posts {
 }
 
 #[doc = include_str!("redbox/README.md")]
-pub mod redbox {
+mod redbox {
     #[doc = include_str!("redbox/chapter_00.md")]
     pub mod chapter_00 {}
 

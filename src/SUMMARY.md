@@ -7,6 +7,7 @@
 
 ---
 
+<!--
 - [Write Redis in Rust](./redbox/README.md)
   - [绪论](./redbox/chapter_00.md)
   - [新建 Echo 服务器](./redbox/chapter_01.md)
@@ -24,3 +25,4 @@
   - [待定](./redbox/chapter_13.md)
   - [待定](./redbox/chapter_14.md)
   - [待定](./redbox/chapter_15.md)
+ -->
