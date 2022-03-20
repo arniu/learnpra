@@ -1,9 +1,14 @@
 # Summary
 
-- [README](./README.md)
-- [API security](./posts/api_security.md)
-- [Crate features](./posts/crate_features.md)
-- [Pin projection](./posts/pin_projection.md)
+- [实践出真知](./README.md)
+- [笔记](./notes/README.md)
+
+  - [MySQL](./notes/mysql.md)
+
+- [随笔](./posts/README.md)
+  - [API security](./posts/api_security.md)
+  - [Crate features](./posts/crate_features.md)
+  - [Pin projection](./posts/pin_projection.md)
 
 ---
 
